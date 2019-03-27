@@ -1,16 +1,20 @@
 import random
 
 # 1-1
-n = input()
+n = int (input())
 a = 0
-while (++a <= n):
+while (a < n):
+    a +=1
     print (a)
 
 #1-2
-n = input()
+n = int(input())
 a = 0
-while (++a <= n):
-    if (a%4 != 0):
+while (a <= n):
+    a += 1
+    b = a%2
+    c = a%4
+    if (b == 1 or c == 0):
         print (a)
 
 #2-1
