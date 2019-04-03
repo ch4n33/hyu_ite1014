@@ -10,7 +10,7 @@ while (a < n):
 #1-2
 n = int(input())
 a = 0
-while (a <= n):
+while (a < n):
     a += 1
     b = a%2
     c = a%4
@@ -72,15 +72,16 @@ while(1):
     if (uval == val): print ("You win!")
     else: print ("You Lose!")
     if(input("Play again?") != "yes"): break
-
 #5
 num = int(input())
 n = num
 p = 2*n-1
 a = 0
+fuck = 0
 line = ""
 while(a < p):
     line = line +"*"
+    fuck += 1
     a += 1
 print(line)
 while(n>1):
@@ -88,6 +89,7 @@ while(n>1):
     line = ""
     while(a < n):
         line = line + "*"
+        fuck += 1
         a += 1
     b = (num - n)*2 + 1
     while(b > 0):
@@ -96,6 +98,7 @@ while(n>1):
     a = 1
     while(a < n):
         line = line + "*"
+        fuck += 1
         a += 1
     n -= 1
     print(line)
@@ -106,6 +109,7 @@ while(n<=num):
     line = ""
     while(a < n):
         line = line + "*"
+        fuck += 1
         a += 1
     b = (num - n)*2 + 1
     while(b > 0):
@@ -114,6 +118,7 @@ while(n<=num):
     a = 1
     while(a < n):
         line = line + "*"
+        fuck += 1
         a += 1
     n += 1
     print(line)
@@ -124,5 +129,7 @@ a = 0
 line = ""
 while(a < p):
     line = line +"*"
+    fuck += 1
     a += 1
 print (line)
+print(fuck)
