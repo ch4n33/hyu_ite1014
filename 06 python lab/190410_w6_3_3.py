@@ -22,8 +22,7 @@ for a in range(0,256):
     hist[a] = hap
 
 for a in range(0,256):
-    hist[a] = int(256*hist[a]/(M*N))
-
+    hist[a] = int(255*hist[a]/(M*N))
 
 newImg = img
 
